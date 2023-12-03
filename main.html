@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub File Upload</title>
+</head>
+<body>
+
+<h1>GitHub File Upload</h1>
+
+<form id="uploadForm">
+  <label for="fileInput">Select a file:</label>
+  <input type="file" id="fileInput" name="file" accept=".txt, .md">
+  <br>
+  <label for="usernameInput">GitHub Username:</label>
+  <input type="text" id="usernameInput" name="username">
+  <br>
+  <label for="repoInput">GitHub Repository:</label>
+  <input type="text" id="repoInput" name="repo">
+  <br>
+  <label for="branchInput">Target Branch:</label>
+  <input type="text" id="branchInput" name="branch" value="main">
+  <br>
+  <label for="tokenInput">GitHub Token:</label>
+  <input type="text" id="tokenInput" name="token">
+  <br>
+  <button type="button" onclick="uploadFile()">Upload File</button>
+</form>
+
+<script>
+  function uploadFile() {
+    // Implement the GitHub API request here using JavaScript
+    // This will involve using the Fetch API or another library like Axios
+    // Be sure to handle user input validation and security on the server-side
+    // This example assumes that you have a server-side endpoint for handling GitHub API requests
+    alert("File upload functionality is not implemented in this example.");
+  }
+</script>
+
+</body>
+</html>
